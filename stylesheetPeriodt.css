@@ -1,0 +1,368 @@
+.body {
+    width: 100%;
+    background-color: #fcf6e7;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    background-image: url('timelineWithNumbers_3.svg');
+    background-repeat: no-repeat;
+    background-position: 0px 1908px;
+    overflow-x: hidden;
+    font-family: Muli;
+}
+
+/*p {
+    font-family: Muli;
+    margin-bottom: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+}*/
+
+span {
+    font-family: Righteous;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fcf6e7;
+    font-family: lemon, Arial, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fix the nav bar */
+    top: 0; /* Stick to the top */
+    left: 0;
+    width: 100%; /* Make it span the full width */
+    z-index: 1000; /* Ensure it stays above other content */
+    box-sizing:border-box;
+    
+}
+
+.title
+, .about-nav {
+    font-size: 36px;
+    color:#fcf6e7 ;
+   
+}
+
+a {
+    text-decoration: none;
+    color:black;
+   
+}
+.hero-page {
+    margin-top: 270px;
+    margin-bottom: 150px;
+}
+
+.container_hero-page {
+    width:80%;
+    height:800px;
+    padding-top: 50px;
+    margin: auto;
+    /*padding-left: 100px;
+    padding-right: 100px;*/
+
+    padding-bottom: 0;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 1fr 330px;
+
+    grid-template-areas: 
+        "space animation animation"
+        "title animation animation"
+        "separator separator separator";
+  }
+
+.welcome-title {
+    font-family: lemon;
+    font-size: 128px;
+    line-height: 105px;
+    width: 530px;
+    /*margin-left: 100px;*/
+    grid-area: title;
+    align-self: start;
+}
+
+.hero-page-animation {
+    padding-bottom: 350px;
+    grid-area: animation;
+   
+}
+#canvas_hero {
+    aspect-ratio: 500/500;
+}
+
+.separator-hero-explanation {
+    grid-area: separator;
+    background-color: #d52a2a;
+    height: 330px;
+    width: 100%;
+   
+}
+
+.what-is-period-title 
+, .start-at-beginning-title 
+, .nope-still-follicular-title
+, .time-for-ovulation-title
+, .oh-no-luteal-title
+, .everything-sucks-title{
+    margin-top:0px;
+    margin-bottom:0px;
+    font-size: 96px;
+    font-family: lemon;
+}     
+
+.container_what-is-period {
+    width: 80%;
+    height: 600px;
+    margin: auto; 
+    padding-top: 100px;
+    
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 35% 65%;
+
+    grid-template-areas: 
+        'free title2 title2'
+        'text1 text1 free2';
+}
+
+.what-is-period-title {
+    grid-area: title2;
+    text-align:right;
+    width: 500px;
+    padding-top: 0;
+    padding-bottom:0;
+    justify-self:end;
+    line-height: 90px;
+    
+}
+
+.menstrual-cycle_text {
+    grid-area: text1;
+    
+}
+
+.container_follicular-phase{
+    width: 80%;
+    height: 1100px;
+    margin: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20% 15% 15% 15% 35%;
+
+    grid-template-areas: 
+        "title3 title3 title3 eins zwei"
+        "drei   text2  text2  text2 vier"
+        "text3  text3  text3  fünf  sechs"
+        "text4  text4  sieben acht  neun"
+        "zehn   elf    zwölf  dreizehn  vierzehn";
+
+}
+.start-at-beginning-title {
+    text-align: left;
+    width: 500px;
+    grid-area: title3;
+    line-height: 90px;
+}
+
+.follicular-phase_text{
+    grid-area: text2;
+}
+
+.medical-term_text {
+    grid-area:text3;
+}
+
+.dysmenorrhea_text {
+    grid-area: text4;
+}
+.period-animation {
+    position: absolute;
+    top: 18%;
+    right: 16%;
+
+}
+
+.container_still-follicular-phase {
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    margin-top: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 48%  auto;
+
+    grid-template-areas: 
+        "one    two    three  title4 title4"
+        "four   text5  text5  text5  five";
+}
+.nope-still-follicular-title {
+    text-align: right;
+    width: 500px;
+    grid-area: title4;
+    line-height: 90px;
+}
+
+.pituitary-gland_text {
+    grid-area: text5;
+}
+
+.container_ovulatory-phase {
+    width: 80%;
+    margin:auto;
+    height: 700px;
+    position: relative;
+    margin-top:100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 35%  25% auto;
+
+    grid-template-areas: 
+        "1    2    title5  title5 title5"
+        "4   text6  text6  text6  5"
+        "6    7    8       9      10";
+}
+.time-for-ovulation-title {
+    text-align: right;
+    width: 700px;
+    justify-self: end;
+    line-height: 90px;
+    grid-area: title5;
+}
+
+.ovulation_text {
+    grid-area: text6;
+}
+
+.ovulation-animation {
+    /*grid-area: animation3;*/
+    position: absolute;
+    top: -10%;
+    right: -10%
+}
+
+.drag-me {
+    position: absolute;
+    top: 127%;
+    left: 11%;
+}
+
+.container_luteal-phase {
+    width: 80%;
+    margin:auto;
+    height: 300px;
+    margin-top:600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 75% 25%;
+
+    grid-template-areas: 
+        "title6  title6 title6 sp1 sp2"
+        "sp3     text7  text7  text7  sp4";
+}
+
+.oh-no-luteal-title {
+    text-align: left;
+    grid-area: title6;
+    line-height: 90px;
+}
+
+.luteal_text {
+    grid-area: text7;
+}
+
+
+
+.container_everything-sucks {
+    width: 80%;
+    margin:auto;
+    height: 700px;
+    margin-top:200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 35% 25% auto;
+
+    grid-template-areas: 
+        "title7  title7 title7 spa1 spa2"
+        "spa3     text8  text8  text8  spa4"
+        "text9    text9   spa5   spa6  spa7"
+        "spa8 spa9 animation4 animation4 animation4";
+}
+
+.everything-sucks-title {
+    text-align: left;
+    grid-area: title7;
+    line-height: 90px;
+}
+
+.PMS_text {
+    grid-area: text8;
+}
+
+.PMS-causes_text {
+    grid-area: text9;
+}
+
+.PMS_animation {
+    margin-top: 170px;
+    grid-area: animation4;
+}
+
+.container_start-button {
+    width: 80%;
+    margin:auto;
+    height: 100px;
+    margin-top:200px;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    grid-template-areas: 
+        "nb1  button nb2";
+}
+.start-again-button {
+
+    margin-top: 800px;
+    margin-bottom: 200px;
+    font-family: lemon;
+    font-size: 55px;
+    line-height: 55px;
+    grid-area: button;
+    justify-self: center;
+    text-align: center;
+
+    border-color: black; 
+    border-radius: 30px;
+    border-width: 5px;
+    border-style: solid;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+
+    transition: background-color .2s, color .2s;
+
+}
+
+.start-again-button:hover {
+    background-color: black;
+    color: #fcf6e7;
+
+}
+
+.footer {
+    width: 70%;
+    margin: auto;
+    margin-top: 600px;
+    background-color: #fcf6e7;
+}
+
+
+  
