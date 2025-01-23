@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'lemonregular';
+    src: url('lemon-regular-webfont.woff2') format('woff2'),
+         url('lemon-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .body {
     width: 100%;
     background-color: #fcf6e7;
@@ -10,6 +19,9 @@
     background-position: 0px 1908px;
     overflow-x: hidden;
     font-family: Muli;
+
+    font-family: 'lemonregular';
+
 }
 
 /*p {
@@ -79,7 +91,7 @@ a {
   }
 
 .welcome-title {
-    font-family: lemon;
+    font-family: lemonregular;
     font-size: 128px;
     line-height: 105px;
     width: 530px;
